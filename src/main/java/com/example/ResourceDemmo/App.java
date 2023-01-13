@@ -31,13 +31,13 @@ public class App {
 
         Resource classPathResource = context.getResource("classpath:application.properties");
         
-//        try {
-//            readFileThroughResource(fileResource);
-//            readFileThroughResource(urlResource);
-//            readFileThroughResource(classPathResource);
-//        } catch (IOException ex) {
-//            Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
-//        }
+        try {
+            readFileThroughResource(fileResource);
+            readFileThroughResource(urlResource);
+            readFileThroughResource(classPathResource);
+        } catch (IOException ex) {
+            Logger.getLogger(App.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     private static void readFileThroughResource(Resource resource) throws IOException {
