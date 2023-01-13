@@ -40,27 +40,27 @@ public class App {
 //        }
     }
 
-//    private static void readFileThroughResource(Resource resource) throws IOException {
-//        InputStream is = null;
-//        BufferedReader br = null;
-//        try {
-//            is = resource.getInputStream();
-//            
-//            br = new BufferedReader(new InputStreamReader(is));
-//
-//            String line;
-//            while ((line = br.readLine()) != null) {
-//                System.out.println(line);
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } finally {
-//            if (is == null) {
-//                is.close();
-//            }
-//            if (br == null) {
-//                br.close();
-//            }
-//        }
-//    }
+    private static void readFileThroughResource(Resource resource) throws IOException {
+        InputStream is = null;
+        BufferedReader br = null;
+        try {
+            is = resource.getInputStream();
+            
+            br = new BufferedReader(new InputStreamReader(is));
+
+            String line;
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (is == null) {
+                is.close();
+            }
+            if (br == null) {
+                br.close();
+            }
+        }
+    }
 }
