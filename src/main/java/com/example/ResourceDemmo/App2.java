@@ -28,12 +28,12 @@ public class App2 {
         
         Resource fileRource = crl.getResource("File:D:\\Content\\Hello.txt");
 //        
-//        try {
-//            readFileThroughResource(fileRource);
-//        } catch (IOException ex) {
-//            Logger.getLogger(App2.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//                
+        try {
+            readFileThroughResource(fileRource);
+        } catch (IOException ex) {
+            Logger.getLogger(App2.class.getName()).log(Level.SEVERE, null, ex);
+        }
+                
     }
 //    
     private static void readFileThroughResource(Resource resource) throws IOException {
