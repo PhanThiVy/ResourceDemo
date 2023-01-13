@@ -20,13 +20,13 @@ import org.springframework.core.io.Resource;
  */
 //@ComponentScan("com.example.ResourceDemo")
 public class App2 {
-//    public static void main(String[] args) {
-////        classpath:com/example/ResourceDemmo/Config.xml
-//        ApplicationContext context = new ClassPathXmlApplicationContext("Conf.xml");
-//        
-//        CustomResourceLoader crl = (CustomResourceLoader) context.getBean("customerResourceLoader");
-//        
-//        Resource fileRource = crl.getResource("File:D:\\Content\\Hello.txt");
+    public static void main(String[] args) {
+//        classpath:com/example/ResourceDemmo/Config.xml
+        ApplicationContext context = new ClassPathXmlApplicationContext("Conf.xml");
+        
+        CustomResourceLoader crl = (CustomResourceLoader) context.getBean("customerResourceLoader");
+        
+        Resource fileRource = crl.getResource("File:D:\\Content\\Hello.txt");
 //        
 //        try {
 //            readFileThroughResource(fileRource);
@@ -34,7 +34,7 @@ public class App2 {
 //            Logger.getLogger(App2.class.getName()).log(Level.SEVERE, null, ex);
 //        }
 //                
-//    }
+    }
 //    
 //    private static void readFileThroughResource(Resource resource) throws IOException {
 //        InputStream is = null;
